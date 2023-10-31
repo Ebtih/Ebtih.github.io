@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+     font-family: 'Poppins', sans-serif;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     scroll-behavior: smooth;
+
+}
+header{
+    background-color: #cccecfa9;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    padding: 10px 200px;
+}
+.logo{
+    text-decoration: none;
+    color: #2f3b41;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: 'Caveat', cursive;
+}
+.navigation a {
+color: #486777;
+text-decoration: none;
+font-size: 1.2em;
+font-weight: 300;
+padding-left: 10px;
+}
+.navigation a:hover{
+    color: #5c1f59;
+}
+section{
+    padding: 100px 200px;
+    background-color: #504a4a2d;
+
+}
+.main{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(../imgcook/mainpic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+.main h2{
+    color: #504a4a;
+    font-size: 2em;
+    font-weight: 600;
+    font-family:'Caveat', cursive;
+}
+.main h3{
+    color: #f7f5f5;
+    font-weight: 500;
+    font-size: 1.8em;
+    font-family:'Caveat', cursive;
+    margin-top: 2px;
+    letter-spacing: 1px;
+    margin-bottom: 13px;
+}
+.main-btn{
+    color: #504a4a;
+    background-color: #cccecf;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+    display: inline-block;
+    padding: .5em;
+    border-radius:15px;
+    letter-spacing: 1px;
+    margin-top: 14px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #afa6a6 ;
+    transform: scaleX(1.1);
+}
+.title{
+    display: flex;
+    justify-content: left;
+    color: #504a4a;
+    font-size:2em ;
+    font-weight:500;
+    margin-bottom:30px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #d6cdcd3f;
+    padding: 10px
+}
+.location h2{
+    padding-left: 170px;
+    display: flex;
+    justify-content: left;
+}
+.content{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden;
+    background-color:#d6cdcd1a;
+}
+
+.menu-card:hover{
+    transform: scaleX(1.1);
+    transition: 0.2s ease;
+}
+img{
+    width: 15em;
+    display: flex;
+    border-radius: 10px;
+
+}
+p{
+    font-size: 20;
+    text-transform: uppercase;
+    
+}
+a{
+    text-decoration:none;
+    color: #0a0606;
+}
+div a:hover{
+color: #189c23;
+size: 10px;
+}
+.specialorder{
+    background-color:#d6cdcd1a;
+
+}
+
+.specialorder .content{
+    margin-top: 30px;
+
+}
+.special-card .menu-card{
+    background-color: #2422228e;
+    border: 1px solid white ;
+    min-height: 14em;
+    width: 15em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.5s ease;
+}
+
+   .special-card:hover{
+    transform: scaleX(1.1);
+   }
+
+   .special-img {
+    width:   100%;
+   }
+.specialorder section{
+    background: #504a4a31;;
+}
+
+.footer{
+    background-color: #352c2b;
+    color: #cccecf;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-icons a{
+color: #cccecf;
+padding: 0 12px 0 0;
+}
+
+
+@media(max-width:1300px) {
+    header
+    {
+        padding: 12px 20px;
+    }
+    .navigation a{
+        padding-left: 3px;
+        font-size: 1.5em;
+    }
+    .title{
+        font-size: 1em;
+    }
+    .logo{
+        font-size: 2em;
+    }
+    .main-btn{
+        font-size: 1.5em;
+    }
+    section{
+        padding: 10px 80px;
+        
+    }
+    
+    .main h2{
+        font-size: 2em;
+
+    }
+    .main h3{
+        font-size: 3em;
+    }
+    .location{
+        width: 100%;
+    }
+
+}
+
+@media(max-width:820px){
+
+    .logo{
+        font-size: 2em;
+    }
+    .main h2{
+        font-size: 3em;
+
+    }
+    
+    .main h3{
+        font-size: 2em;
+        
+    }
+    
+}
+@media(max-width:390px){
+    
+    body{
+        font-size: 8px;
+    }
+    #contact h2{
+        font-size: 3em;
+       
+    }
+    section{
+        padding: 11px 75px;
+    }
+    .location h2{
+        font-size: 3em;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+        
+    }
+    .location{
+        width:300;
+        height: 280;
+    }
+    
+    #menu h2{
+        font-size: 4em;
+    }
+    #specialorder h2{
+        font-size: 3em;
+    }
+    .logo{
+        font-size: 2em;
+    }
+    .main h2 {
+        font-size: 4em;
+    }
+    .main h3{
+        font-size: 4em;
+    }
+    .main-btn{
+        font-size: 2em;
+        border-radius: 25px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
